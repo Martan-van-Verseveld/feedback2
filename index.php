@@ -31,8 +31,27 @@
         $smiley = htmlspecialchars($_POST['smiley']);
         $feedback = htmlspecialchars($_POST['feedback']);
 
+        switch ($smiley) {
+            case 'O1':
+                $smiley = "Uitstekend";
+                break;
+            case 'O2':
+                $smiley = "Goed";
+                break;
+            case 'O3':
+                $smiley = "Redenlijk";
+                break;
+            case 'O4':
+                $smiley = "Matig";
+                break;
+            case 'O5':
+                $smiley = "Slecht";
+                break;
+        }
+
         echo "<p>Uw smiley keuze was de: </p >".$smiley;
         echo "<p>Uw opmerking was: </p>".$feedback;
+
     }
 ?>
 </body>
