@@ -39,7 +39,7 @@
                 $smiley = "Goed";
                 break;
             case 'O3':
-                $smiley = "Redenlijk";
+                $smiley = "Redelijk";
                 break;
             case 'O4':
                 $smiley = "Matig";
